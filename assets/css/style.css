@@ -1,0 +1,418 @@
+/* Reset CSS */
+* {
+    /* kiểu viết tắt emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
+*/
+
+.clear {
+  clear: both;
+}
+.text-white {
+  color: #fff !important;
+}
+
+#main {
+
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46.5px;
+  background-color: #000;
+  z-index: 1;
+  /* display: inline-block; */
+}
+
+#nav {
+  display: inline-block;
+}
+#nav, .subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46.5px;
+  padding: 0 24px;
+  display: block;
+
+}
+
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top:100%;
+  left: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+  background-color: #fff;
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 14px;
+  line-height: 38px;
+}
+
+#nav .subnav li {
+  color: #000;
+  /* background-color: #fff; */
+  
+}
+
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#header .arrow-down {
+  font-size: 14px;
+}
+
+#header .btn-search:hover {
+  background-color: #f44336; 
+}
+
+#header .btn-search {
+  float: right;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+
+#header .search-icon {
+  color: #fff;
+  font-size: 16px;
+  line-height: 46.5px;
+}  
+
+#slider {
+  margin-top: 46.5px;
+  padding-top: 50%; /*Set tỷ lệ % có nghĩa 50% là 1/2 chiều ngang */
+  background-image: url(/assets/img/slider/chicago.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+
+}
+
+#slider .text-heading {
+  font-size: 24px;
+  font-weight: 500px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 15px;
+} 
+
+
+#content {
+
+}
+
+#content .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+#content .section-heading {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 25px;
+}
+
+#content .about-text {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+  margin-top: 25px;
+}
+
+#content .member-list {
+  margin-top: 48px;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+/*tour section*/
+.tour-section {
+  background-color: #000;
+  /* padding-bottom: 48px; */
+}
+
+.ticket-list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.ticket-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  color: #757575;
+  list-style: none;
+}
+
+.ticket-list .sold-out {
+  margin-left: 16px;
+  background: #f44336;
+  color: #fff;
+  padding: 3px 8px;
+}
+
+.ticket-list .count {
+  float: right;
+  background-color: #000;
+  color: #ffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+/*.Places*/ 
+.place-list {
+  margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 48px;
+  /* viet tat margin: 32px -8px 0; */
+}
+
+.place-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-img {
+  width: 100%;
+  display: block;
+
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+.place-time {
+  margin-top: 15px;
+  color: #757575;
+}
+.place-desc {
+  margin-top: 15px;
+  line-height: 1.4;
+
+}
+.s-full-width:hover {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+}
+.s-full-width {
+  background-color: #000;
+  color:#fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/*BUY TICKETS MODAL*/
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-container {
+  background: #fff;
+  width: 900px;
+  min-height: 200px;
+  position: relative;
+  animation: fadeInModal ease 0.4s;
+}
+
+.modal-heading {
+  background: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.modal-heading-icon {
+  margin-right: 12px;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+#buy-tickets:hover {
+  opacity: 0.9;
+}
+
+#buy-tickets {
+  background: #009688;
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.modal-footer a {
+  color: #2196F3;
+}
+
+.modal-footer {
+  font-size: 15px;
+  text-align: right;
+  padding: 16px;
+}
+
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#footer {
+
+}
