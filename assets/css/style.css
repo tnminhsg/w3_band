@@ -7,6 +7,7 @@
   }
 
 html {
+  scroll-behavior: smooth;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -23,13 +24,79 @@ html {
 4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
 */
 
+/*=========Common======*/
 .clear {
   clear: both;
 }
+
 .text-white {
   color: #fff !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn{
+  color:#fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-third {
+  width: 33.33333%
+}
+
+
+
+/*========Main========*/
 #main {
 
 }
@@ -166,9 +233,9 @@ html {
 
 #content .content-section {
   width: 800px;
+  padding: 64px 0 112px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0;
 }
 
 #content .section-heading {
@@ -195,12 +262,6 @@ html {
 
 #content .member-list {
   margin-top: 48px;
-}
-
-#content .member-item {
-  float: left;
-  width: 33.33333%;
-  text-align: center;
 }
 
 #content .member-name {
@@ -254,18 +315,9 @@ html {
 /*.Places*/ 
 .place-list {
   margin-top: 32px;
-  margin-left: -8px;
-  margin-right: -8px;
-  padding-bottom: 48px;
-  /* viet tat margin: 32px -8px 0; */
 }
 
-.place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0 8px;
 
-}
 .place-img:hover {
   opacity: 0.6;
 }
@@ -293,19 +345,8 @@ html {
   line-height: 1.4;
 
 }
-.s-full-width:hover {
-  background-color: #ccc;
-  color: #000;
-  border: none;
-}
-.s-full-width {
-  background-color: #000;
-  color:#fff;
-  text-decoration: none;
-  padding: 10px 10px;
-  display: inline-block;
-  margin-top: 15px;
-}
+
+
 
 /*BUY TICKETS MODAL*/
 .modal {
@@ -413,6 +454,64 @@ html {
     transform: translateY(0);
   }
 }
-#footer {
 
+/*Contact*/
+
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/*Map Section*/
+.map-section img {
+  width: 100%;
+}
+
+/*Footer section */
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social-list a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright  a:hover,
+#footer .social-list a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+#footer .social-list {
+  font-size: 24px;
+}
+
+#footer .copyright {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
+}
+
+#footer .copyright  a{
+  color: rgba(0, 0, 0, 0.7);
 }
