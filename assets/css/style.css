@@ -200,7 +200,7 @@ html {
 #slider {
   margin-top: 46.5px;
   padding-top: 50%; /*Set tỷ lệ % có nghĩa 50% là 1/2 chiều ngang */
-  background-image: url(/assets/img/slider/chicago.jpg);
+  background-image: url(assets/img/slider/chicago.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
